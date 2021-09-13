@@ -17,13 +17,13 @@ while True:
     user_removal= college_football.pop(user_removal, None)
     print(college_football)
     continue
-  if user_input.lower() == 'a':
+  elif user_input.lower() == 'a':
     state= input("What state would you like to add?")
     team_name= input("What is the team name?")
     college_football[state] = team_name
     print(college_football)
     continue
-  if user_input.lower() == 'q':
+  elif user_input.lower() == 'q':
     print("Exiting the program")
     break
 
