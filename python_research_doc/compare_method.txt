@@ -1,0 +1,39 @@
+cmp(list)
+-------------
+The cmp(list) function is a Python function that in Python 2 compares two integers and return -1, 0, 1 and it does not work in Python 3.
+
+Syntax of cmp(list)
+-------------
+The syntax of the cmp(list) function is:
+
+a = [1,2,3]
+b = [1,2,3]
+  cmp(a, b)
+
+cmp() Parameters
+-------------
+The cmp() function can take up to 2 numbers or list or object in which the comparison is being done
+
+    list1 : The first argument list to be compared.
+    list2 : The second argument list to be compared.
+  
+  ex.
+    stock_price_1 = [50.23]
+    stock_price_2 = [75.14]
+
+    print(cmp(stock_price_1, stock_price_2))
+    print(cmp(stock_price_1, stock_price_1))
+    print(cmp(stock_price_2, stock_price_1))
+
+cmp() Returns
+-------------
+    -1
+    0
+    1
+
+
+
+Referece: https://www.datacamp.com/community/tutorials/python-list-function
+https://www.geeksforgeeks.org/python-2-number-cmplist-method/
+
+

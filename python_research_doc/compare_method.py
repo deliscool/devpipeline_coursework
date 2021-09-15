@@ -1,0 +1,1 @@
+## cmp(list1, list2): It compares elements of both lists list1 and list2.
