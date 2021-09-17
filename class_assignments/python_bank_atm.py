@@ -16,6 +16,7 @@ customer = {
 def create_customer():
     name = input('Please your name:')
     customer['name'] = name
+    new_file =
     global customer_login
     customer_login = True
 
