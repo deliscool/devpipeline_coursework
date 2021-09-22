@@ -1,11 +1,8 @@
 import os
-import sys
 
-# Make a list that will hold on to the items
-shopping_list = []
-
-# Create a filename for the list
-saved_file = "shopping_list.txt"
+# Create list and file
+sl = []
+shopping_file = "shopping_list.txt"
 
 def clear_console():
     # Clear the console
@@ -80,9 +77,9 @@ def delete_list(filename, list):
     except FileNotFoundError:
         print("List deleted successfully.")
 
-open_list(saved_file, shopping_list)
+open_list(shopping_file, sl)
 
-show_help(shopping_list)
+show_help(sl
 
 while True:
     new_item = input("\nAdd an item: ")
