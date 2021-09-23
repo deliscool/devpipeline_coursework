@@ -19,23 +19,24 @@ def create_usern():
 #Start of game loop function
 def game_play():
     while True:
-        print(f'{player["name"]} in order to escape, try not to die. \nPlease choose from the following options:\n')
+        print(chalk.bgGreen(f'{player["name"]} in order to escape, try not to die. \nPlease choose from the following options:\n'))
         game_options = int(input('[1]Open the door? \n[2]Put hand in the hole? \n[3]Find key? \n'))
         if game_options == 2:
-                print(chalk.yellow('You have died 😵!!!...again'))
-                print(chalk.yellow('---------------------------'))
+                print(chalk.red('You have died 😵!!!...again'))
+                print(chalk.red('---------------------------'))
                 continue
         elif game_options == 1:
-                print(chalk.orange('You do not have key 😫, try again'))
-                print(chalk.yellow('---------------------------'))
+                print(chalk.red('You do not have key 😫, try again'))
+                print(chalk.red('---------------------------'))
                 continue
         elif game_options == 3:
-                print('You found the key 😬!')
-                game_start()
+                print(chalk.blue('You found the key 😬!'))
+                play_again()
 
+#Play again function
 def play_again():
   while True:
-    again = str(input(f'{player["name"]} shall we play again?\n(Y) yes to play \n(Q) to quit'))
+    again = str(chalk.bgBlue(input(f'{player["name"]} shall we play again?\n(Y) yes to play \n(Q) to quit')))
     if again == 'y':
       game_start()
     elif again == 'q':
