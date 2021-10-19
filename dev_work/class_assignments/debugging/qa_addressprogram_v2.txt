@@ -1,0 +1,28 @@
+ID:addressprogram_v2
+Tester:Del
+
+Environment: macOS Big Sur Version 11.6, VS Code
+
+Summary/Description: 
+    Address book Application scope should provide a mechnism for the user to:
+        1.Add people to their address book
+        2.Remove people from their address book
+        3.Find people in their address book
+        4.Save the address book to a file
+        5.Load the address book from a file
+        6.Quit
+
+Details:
+    VS Code Errors: 0
+        
+    Run Program 
+        Traceback (most recent call last):
+        File "/Users/del/Desktop/devpipeline_coursework/dev_work/class_assignments/debugging/test_address_program_v1.py", line 66, in <module>
+        with open('address_book.csv', 'r', newline='') as csvfile:
+        FileNotFoundError: [Errno 2] No such file or directory: 'address_book.csv'
+
+Steps to Reproduce:
+    1.copy code to VS Code
+        1a.use
+    2.run script on VS code terminal
+Attachments / Screenshots:

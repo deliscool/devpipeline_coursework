@@ -1,0 +1,31 @@
+BugID:{Program name_version of code/program}
+Tester:{Name of Person or group who is testing it}
+
+Environment: {what is the environment and program you are running the program in? }
+
+Summary/Description: {Purpose of the program}
+    Address book Application scope should provide a mechnism for the user to:
+        1.Add people to their address book
+        2.Remove people from their address book
+        3.Find people in their address book
+        4.Save the address book to a file
+        5.Load the address book from a file
+        6.Quit
+
+Details:{what happened when you ran the program}
+    VS Code Errors:
+        String literal is unterminated [34 ,16]
+        Expected ")" [36,1]
+    Run Program 
+        SyntaxError: EOL while scanning string literal
+            line 34 print(f'{num_string} {row["First Name"]:10} {row["Last Name"]:15} {row["Address"]:20} {row["City"]:15} {row["State"]:^6})
+
+Severity: Critical (Code will not execute) Moderate, Low
+
+Steps to Reproduce: {What are the steps did you make in creating the bug to verify it is a bug}
+    1.copy code to VS Code
+    2. run script on VS code terminal
+Attachments / Screenshots:
+
+Solution:
+{were you able to fix it, if so what is the fix?}
